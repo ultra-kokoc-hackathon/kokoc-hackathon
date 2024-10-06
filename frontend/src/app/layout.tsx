@@ -18,8 +18,8 @@ const geist = localFont({
 });
 
 export const metadata: Metadata = {
-	title: "Cocos Group",
-	description: "Football Club Cocos Group",
+	title: "Kokoc Group",
+	description: "Football Club Kokoc Group",
 };
 
 export default function RootLayout({
