@@ -1,5 +1,14 @@
 import styles from "./button.module.scss";
 
-export const Button = () => {
-	return <button className={styles.button}>Button</button>;
+type ButtonProps = {
+	text: string;
+	callback?: () => void;
+};
+
+export const Button = ({ text, callback }: ButtonProps) => {
+	return (
+		<button className={styles.button} onClick={callback}>
+			{text}
+		</button>
+	);
 };

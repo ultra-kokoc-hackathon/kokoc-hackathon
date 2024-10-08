@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./header.module.scss";
@@ -6,6 +7,13 @@ import { Button } from "./Button/Button";
 import logo from "../../../public/icons/logo.svg";
 
 export const Header = () => {
+	const login = () => {
+		console.log("login");
+	};
+	const register = () => {
+		console.log("register");
+	};
+
 	return (
 		<header className={styles.header}>
 			<Link href="/" className={styles.logo}>
@@ -15,8 +23,8 @@ export const Header = () => {
 			</Link>
 			<Links />
 			<div className={styles.buttons}>
-				<Button />
-				<Button />
+				<Button text="Войти" callback={login} />
+				<Button text="Регистрация" callback={register} />
 			</div>
 		</header>
 	);

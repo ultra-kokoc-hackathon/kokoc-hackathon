@@ -1,4 +1,24 @@
 @import "@styles";
 
 .button {
+    width: max-content;
+    height: 44px;
+    padding: 10px 52px;
+    border-radius: 20px;
+    display: inline-block;
+    border: none;
+    background-color: var(--color-dark);
+
+    font-family: var(--font-museo);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-text);
+    text-align: center;
+    transition: all 0.5s ease;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--color-accent);
+        //transform: scale(1.1) perspective(1px);
+    }
 }

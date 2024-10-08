@@ -1,12 +1,12 @@
 @import "@styles";
 
 .header {
-    height: 44px;
-    margin: 12px 42px 0px 16px;
+    height: calc(44px + 12px);
+    margin: 0px 42px 0px 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .imgContainer {
@@ -20,9 +20,11 @@
 }
 
 .buttons {
-    width: 417px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
+
+    & button:first-child {
+        margin-right: 29px;
+    }
 }
