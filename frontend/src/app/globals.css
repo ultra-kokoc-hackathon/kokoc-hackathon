@@ -1,16 +1,16 @@
 @import "normalize.css";
 
 :root {
-  --color-bg: #ffffff;
-  --color-light: #f3f3f3;
-  --color-accent: #b9ff66;
-  --color-dark: #191a23;
+  --color-bg: #000000;
+  --color-text: #ffffff;
+  --color-accent: #e02727;
+  --color-dark: #1e1e1e;
 }
 
 body {
-  color: var(--color-dark);
+  color: var(--color-text);
   background-color: var(--color-bg);
-  font-family: var(--font-inter);
+  font-family: var(--font-museo);
 }
 
 * {
@@ -25,7 +25,6 @@ a {
 }
 
 .container {
-  padding: 0 50px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

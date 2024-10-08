@@ -2,8 +2,6 @@
 
 // repeated styles example
 @mixin title {
-    font-family: var(--font-inter);
     font-weight: 500;
-    font-size: 20px;
-    color: $black;
+    font-size: 32px;
 }
