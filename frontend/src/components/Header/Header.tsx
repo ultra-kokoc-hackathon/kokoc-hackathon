@@ -1,30 +1,23 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./header.module.scss";
+import { Links } from "./Links/Links";
+import { Button } from "./Button/Button";
+import logo from "../../../public/icons/logo.svg";
 
 export const Header = () => {
 	return (
 		<header className={styles.header}>
-			<Link href="/" className={styles.link}>
-				HomePage
+			<Link href="/" className={styles.logo}>
+				<div className={styles.imgContainer}>
+					<Image src={logo} alt="Logo" fill className={styles.img} />
+				</div>
 			</Link>
-			<Link href="/news" className={styles.link}>
-				NewsPage
-			</Link>
-			<Link href="/team" className={styles.link}>
-				TeamPage
-			</Link>
-			<Link href="/matches" className={styles.link}>
-				MatchesPage
-			</Link>
-			<Link href="/shop" className={styles.link}>
-				ShopPage
-			</Link>
-			<Link href="/about" className={styles.link}>
-				AboutPage
-			</Link>
-			<Link href="/contacts" className={styles.link}>
-				ContactsPage
-			</Link>
+			<Links />
+			<div className={styles.buttons}>
+				<Button />
+				<Button />
+			</div>
 		</header>
 	);
 };
