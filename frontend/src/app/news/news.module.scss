@@ -1,4 +1,53 @@
-@import "@styles";
+@import '@styles';
 
 .news {
+  padding: 73px 220px 0 177px;
+  width: 100%;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 26px;
+}
+
+.subtitleContainer {
+  display: flex;
+  gap: 25px;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.newsContainer {
+  margin-top: 73px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 61px;
+}
+
+.mansImage {
+  width: 467px;
+  height: 509px;
+  object-fit: cover;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+}
+
+.button {
+  border-radius: 20px;
+  padding: 10px 52px;
+  width: 236px;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 70px auto 69px;
+  background: #1e1e1e;
+  color: #fff;
+  border: none;
+  outline: none;
 }
