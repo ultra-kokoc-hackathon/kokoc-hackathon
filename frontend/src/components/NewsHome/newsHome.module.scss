@@ -1,0 +1,19 @@
+@import "@styles";
+
+.news {
+    margin-bottom: 137px;
+}
+
+.title {
+    @include title;
+    margin: 92px 0px 103px 0;
+    text-align: center;
+}
+
+.news_cards {
+    width: 1380px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 110px;
+    row-gap: 66px;
+}

@@ -1,24 +1,15 @@
+import { MatchesHome } from "@/components/MatchesHome/MatchesHome";
 import styles from "./home.module.scss";
-// import Image from "next/image";
-// import arrow from "../../public/icons/arrow.svg";
-import Baner from '@/components/Baner/Baner';
+import { NewsHome } from "@/components/NewsHome/NewsHome";
+import Baner from "@/components/Baner/Baner";
 
 const HomePage = () => {
 	return (
-		<div className={styles.home}>
-			<main className={styles.main}>
-				<Baner />
-				{/* HomePage */}
-				{/* <div className={styles.imgContainer}>
-					<Image
-						src={arrow}
-						alt="arrow"
-						fill
-						className={styles.img}
-					/>
-				</div> */}
-			</main>
-		</div>
+		<main className={styles.home}>
+			<Baner />
+			<MatchesHome />
+			<NewsHome />
+		</main>
 	);
 };
 

@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./header.module.scss";
 import { Links } from "./Links/Links";
-import { Button } from "./Button/Button";
-import logo from "../../../public/icons/logo.svg";
+import { Button } from "../Button/Button";
+import logo from "/public/icons/logo.svg";
 
 export const Header = () => {
 	const login = () => {
@@ -23,8 +23,12 @@ export const Header = () => {
 			</Link>
 			<Links />
 			<div className={styles.buttons}>
-				<Button text="Войти" callback={login} />
-				<Button text="Регистрация" callback={register} />
+				<Button text="Войти" callback={login} classname="header" />
+				<Button
+					text="Регистрация"
+					callback={register}
+					classname="header"
+				/>
 			</div>
 		</header>
 	);
