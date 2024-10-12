@@ -5,18 +5,3 @@
   flex-direction: column;
   align-items: center;
 }
-
-.main {
-  display: flex;
-  flex-direction: column;
-}
-
-.imgContainer {
-  position: relative; // !!! обязательно должен быть
-  width: 50px; // размеры раздаем здесь контейнеру, а не изображению!
-  height: 50px;
-}
-
-.img {
-  object-fit: contain; // !!! обязательно должен быть
-}
