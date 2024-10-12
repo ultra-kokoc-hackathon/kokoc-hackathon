@@ -1,15 +1,12 @@
 @import "@styles";
 
-.matches {
-}
-
 .title {
     @include title;
     margin: 93px 0px 92px 0;
     text-align: center;
 }
 
-.container {
+.matches_cards {
     width: 1380px;
     height: 503px;
     display: flex;

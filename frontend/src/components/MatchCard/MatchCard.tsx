@@ -2,8 +2,8 @@
 import styles from "./matchCard.module.scss";
 import Image from "next/image";
 import vs from "/public/icons/vs.svg";
-import kokoc from "/public/images/kokoc.png";
-import zenith from "/public/images/zenith.png";
+import kokoc from "/public/images/home/kokoc.png";
+import zenith from "/public/images/home/zenith.png";
 import { Button } from "../Button/Button";
 
 type Props = {

@@ -39,9 +39,9 @@ const matches: Match[] = [
 
 export const MatchesHome = () => {
 	return (
-		<div className={styles.matches}>
+		<section className={styles.matches}>
 			<h2 className={styles.title}>Предстоящие матчи</h2>
-			<div className={styles.container}>
+			<div className={styles.matches_cards}>
 				{matches.map(
 					(
 						{ id, date, league, opponent_team, stadium, city },
@@ -59,6 +59,6 @@ export const MatchesHome = () => {
 					)
 				)}
 			</div>
-		</div>
+		</section>
 	);
 };
