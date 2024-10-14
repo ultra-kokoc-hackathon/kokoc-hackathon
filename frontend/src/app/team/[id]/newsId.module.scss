@@ -1,0 +1,68 @@
+@import '@styles';
+
+.teamId {
+  width: 100%;
+  padding: 40px 298px 0 220px;
+  flex: 1;
+}
+
+.headerContainer {
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.textBack {
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 32px;
+  color: #fff;
+}
+
+.image {
+  border-radius: 20px;
+  width: 468px;
+  height: 560px;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.conteinerWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.conteinerName {
+  width: 726px;
+}
+
+.conteinerBiofrafy {
+  width: 727px;
+}
+
+.column {
+  display: flex;
+  gap: 63px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+.textUppercase {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}

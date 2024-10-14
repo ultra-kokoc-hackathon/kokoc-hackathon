@@ -14,8 +14,8 @@ import BanerImage from './../../../public/image.png';
 
 const Baner = () => {
   const swiperRef = useRef<SwiperType | null>(null);
-  const { changeSlideBtn, handleDisBtn } =
-    useSwiperControls(swiperRef);
+  const BANER_DATA = Array(4).fill(BanerImage);
+  const { changeSlideBtn, handleDisBtn } = useSwiperControls(swiperRef);
 
   return (
     <div className={styles.baner}>
@@ -35,36 +35,16 @@ const Baner = () => {
           modules={[FreeMode]}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
-          <SwiperSlide>
-            <Image
-              src={BanerImage}
-              alt='Картинка банера'
-              className={styles.banerImage}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={BanerImage}
-              alt='Картинка банера'
-              className={styles.banerImage}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={BanerImage}
-              alt='Картинка банера'
-              className={styles.banerImage}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={BanerImage}
-              alt='Картинка банера'
-              className={styles.banerImage}
-            />
-          </SwiperSlide>
+          {BANER_DATA.map((item, index) => (
+            <SwiperSlide key={index}>
+              <Image
+                src={item}
+                alt='Картинка банера'
+                className={styles.banerImage}
+              />
+            </SwiperSlide>
+          ))}
         </SwiperComponent>
-
         <button className={`${styles.button} ${styles.left}`}>
           <Image
             src={Left}

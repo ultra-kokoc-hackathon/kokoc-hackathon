@@ -1,0 +1,31 @@
+@import '@styles';
+
+.filter {
+  display: flex;
+  gap: 44px;
+  margin: 26px 0 60px 0;
+}
+
+.select {
+  border-radius: 20px;
+  padding: 10px 19px;
+  width: 277px;
+  background: #1e1e1e;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.input {
+  border-radius: 20px;
+  padding: 10px 19px;
+  background: #1e1e1e;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}

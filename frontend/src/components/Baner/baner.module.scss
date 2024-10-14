@@ -4,7 +4,8 @@
   width: 3172px;
   height: 750px;
   margin: 89px 0 0 0;
-  position: relative;display: flex;
+  position: relative;
+  display: flex;
 }
 
 .banerWrapper {
@@ -17,7 +18,6 @@
 .banerImage {
   width: 1024px;
   height: 661px;
-  // object-fit: cover;
   position: relative;
 }
 
@@ -35,6 +35,5 @@
 }
 
 .right {
-  top: 291px;
   right: 650px;
 }

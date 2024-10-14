@@ -3,12 +3,16 @@ import Image from 'next/image';
 import styles from './news.module.scss';
 import SoccerMan from './../../../public/mans.png';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const NewsPage = () => {
-	const [visibleCount, setVisibleCount] = useState(6);
-  const NEWS_DATA = Array(333).fill(SoccerMan);
-	const handleShowMore = () => {
-    setVisibleCount(prevCount => Math.min(prevCount + 3, NEWS_DATA.length));
+  const [visibleCount, setVisibleCount] = useState(6);
+  const NEWS_DATA = Array.from({ length: 333 }, (_, index) => ({
+    id: index + 1,
+    src: SoccerMan,
+  }));
+  const handleShowMore = () => {
+    setVisibleCount((prevCount) => Math.min(prevCount + 3, NEWS_DATA.length));
   };
   return (
     <div className={styles.news}>
@@ -18,14 +22,15 @@ const NewsPage = () => {
         <p className={styles.text}>#дайджест</p>
         <p className={styles.text}>#пресс-релизы</p>
       </div>
-			<div className={styles.newsContainer}>
-        {NEWS_DATA.slice(0, visibleCount).map((imageSrc, index) => (
-          <Image
-            key={index}
-            src={imageSrc}
-            alt='Картинка банера'
-            className={styles.mansImage}
-          />
+      <div className={styles.newsContainer}>
+      {NEWS_DATA.slice(0, visibleCount).map(({ id, src }) => (
+          <Link key={id} href={`/news/${id}`}>
+            <Image
+              src={src}
+              alt='Картинка банера'
+              className={styles.mansImage}
+            />
+          </Link>
         ))}
       </div>
       {visibleCount < NEWS_DATA.length && (

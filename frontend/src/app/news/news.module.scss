@@ -1,8 +1,9 @@
 @import '@styles';
 
 .news {
-  padding: 73px 220px 0 177px;
+  padding: 73px 202px 0 177px;
   width: 100%;
+  flex: 1;
 }
 
 .subtitle {
@@ -50,4 +51,5 @@
   color: #fff;
   border: none;
   outline: none;
+  cursor: pointer;
 }

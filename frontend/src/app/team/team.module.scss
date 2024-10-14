@@ -1,4 +1,28 @@
 @import "@styles";
 
-.team {
+.matches {
+  padding: 73px 460px 0 220px;
+  flex: 1;
 }
+
+.subtitle {
+  font-weight: 600;
+  font-size: 32px;
+  color: #fff;
+}
+
+.teamsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  gap: 44px;
+  width: 1240px;
+}
+
+.teamImage {
+  border-radius: 20px;
+  width: 277px;
+  height: 387px;
+}
+
